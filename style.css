@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    border: 1px dotted red;
+    background-color: black;
+    height: 94vh;
+    width: 100vw;
+}
+
+/* header style start............................................................................... */
+.logo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.logo a{
+    /* border: 1px solid; */
+    margin-left: -10px;
+    color:blue;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.logo_1 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid white;
+    /* font-size: 1.2rem; */
+}
+header{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+ul li :hover{
+    color: red;
+}
+a{
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+#bar{
+    font-size: 1.2rem;
+    display: none;
+    cursor: pointer;
+
+}
+/* header style end........................................................................... */
+
+/* landing page start.......................................................................... */
+.landing{
+    border: 1px solid;
+    height: 83vh;
+    width:99vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.box1{
+    border: 1px dotted blue;
+    height: 60vh;
+    width: 80vh;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding-left: 50px;
+    color: white;
+    padding-top: 20px;
+   
+}
+.box1 h4{
+    font-size: 1.6rem;
+    font-style: italic;
+}
+.box1 h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.box1 h2{
+    font-size: 2.4rem;
+   font-weight: bold;
+}
+.box1 h2::first-letter{
+    color:orangered;
+}
+span{
+    color: orangered;
+}
+.box1 p{
+    font-size: 1.2rem;
+}
+.box1 button{
+    border: 1px solid rgb(32, 32, 179) ;
+    height: 6vh;
+    width: 8vw; 
+    padding:10px 10px 30px 10px;
+    background-color: rgb(32, 32, 179);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.fb{
+    /* border: 2px solid; */
+    padding: 0;
+    height: 10vh;
+    width: 40vh;
+    margin-top:10px;
+    font-size: 2rem;
+    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: -15px;
+    /* padding: 10px 0 10px 0; */
+    
+}
+.box2{
+    border: 2px dotted orangered;
+    height: 70vh;
+    width: 50vh;
+}
+.box2 img{
+    height: 100%;;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* landing page end........................................................................... */
+/* Media query start.......................................................................... */
+@media (max-width:1220px){
+    .box1{
+        height: 70vh;
+        width: 97vh;
+        padding-left: 10px;
+    }
+    .box1 button{
+        height: 5vh;
+        width: 18vw;   
+    }
+}
+
+
+
+
+@media (max-width:600px){
+    #bar{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top:24px;
+        font-size: 1.3rem;
+        color: white;
+    }
+    nav ul{
+        /* border: 1px solid; */
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 10px 0;
+        display: none;
+     }
+    header{
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    header .logo{
+        align-self: flex-start;
+        margin: 5px 20px ;
+    }
+    .showmenu{
+        display: block;
+    }
+
+}
+
+    @media (max-width:700px){
+    section{
+        height: 230vh;
+    }
+    .landing{
+        border: 1px solid white;
+        margin-top: 30px;
+        flex-direction: column;
+        justify-content: space-around;
+        /* gap: 20px; */
+        height: 180vh;
+    }
+    .box1{
+        border: 1px dotted blue;
+        height: 80vh;
+        width: 88vh;
+        margin-top: 20px;
+        padding-left: 10px;
+    }
+    .box1 button{
+        border: 1px solid rgb(32, 32, 179) ;
+        height: 6vh;
+        width: 25vw; 
+        padding: 3px 5px 3px 5px;
+    }
+    .box1 .fb{
+    border: 1px solid;
+    height: 20vh;
+    width: 40vh;
+    margin-top:20px;
+    }
+    .box2{
+        height: 60vh;
+        width: 60vh;
+    }
+}
+
+
+@media (max-width:430px){
+    .box1{
+        width: 80vw;
+        height:80vh ;
+        padding-left: 10px;
+        gap: 10px;
+    }
+    .box1 button{
+        width:35vw ;
+    }
+    .box1 p{
+        text-align: justify;
+    }
+}
+
+@media (max-width:360px){
+    .box1{
+        width: 80vw;
+    }
+    .box1 button{
+        width:45vw ;
+    }
+    .box1 p{
+        text-align: justify;
+    }
+}
